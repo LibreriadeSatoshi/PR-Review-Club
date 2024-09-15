@@ -1,5 +1,22 @@
 # Guía para trabajar con Git en proyectos de Bitcoin Open Source
 
+## Índice
+
+1. [Guía para trabajar con Git en proyectos de Bitcoin Open Source](#guía-para-trabajar-con-git-en-proyectos-de-bitcoin-open-source)
+2. [Conceptos](#conceptos)
+    - [Remote (Remoto)](#remote-remoto)
+    - [Upstream](#upstream)
+    - [Diferencia clave entre origin y upstream](#diferencia-clave-entre-origin-y-upstream)
+3. [Buenas prácticas](#buenas-prácticas)
+    - [Sincroniza regularmente tu fork con el repositorio original](#sincroniza-regularmente-tu-fork-con-el-repositorio-original)
+    - [Trabaja en ramas específicas para cada funcionalidad o corrección](#trabaja-en-ramas-específicas-para-cada-funcionalidad-o-corrección)
+    - [Mantén tus ramas locales organizadas](#mantén-tus-ramas-locales-organizadas)
+    - [Comparar tu fork con el original y evitar duplicidad de trabajo](#comparar-tu-fork-con-el-original-y-evitar-duplicidad-de-trabajo)
+    - [Mantén una buena comunicación con la comunidad](#mantén-una-buena-comunicación-con-la-comunidad)
+4. [Flujos de trabajo](#flujos-de-trabajo)
+    - [¿Cómo se empieza a trabajar en un proyecto (típicamente)?](#cómo-se-empieza-a-trabajar-en-un-proyecto-típicamente)
+    - [¿Cómo compruebo si estoy al día de los cambios en mi proyecto?](#cómo-compruebo-si-estoy-al-día-de-los-cambios-en-mi-proyecto)
+
 Trabajar en proyectos open source en Bitcoin, especialmente cuando se hace fork de un repositorio y se contribuye con cambios, requiere un flujo organizado para evitar conflictos y mantener un trabajo limpio. Aquí te dejo una guía de buenas prácticas y algunas aclaraciones, para asegurar que tu trabajo no entre en conflicto con otros colaboradores y que mantengas tu fork y ramas bien gestionadas.
 
 Estas recomendaciones son una guía general para trabajar en proyectos open source, pero cada proyecto puede tener sus propias reglas, flujos de trabajo y convenciones. Siempre es recomendable revisar las directrices específicas del proyecto, como las contribuciones (contributing guidelines), los issues abiertos, PR, y las políticas de revisión de código. Antes de empezar cualquier trabajo importante, es una buena práctica comunicarte con los mantenedores del proyecto o con otros colaboradores, y confirmar que tu enfoque está alineado con los objetivos del proyecto.
