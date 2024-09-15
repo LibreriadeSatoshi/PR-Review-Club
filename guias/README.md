@@ -39,21 +39,21 @@ git remote -v
 Upstream es un tipo de `remote` que hace referencia al repositorio original del cual hiciste un fork. Cuando trabajas con un fork en GitHub, tu repositorio local estará vinculado al `origin` (tu repositorio forkeado en tu cuenta), pero puedes agregar el repositorio original como un `remote` adicional llamado upstream.
 
 Por qué usar **upstream**:
-Si has hecho un fork de un proyecto en GitHub, es importante que mantengas tu copia sincronizada con el repositorio original. `Upstream` te permite traer los últimos cambios del proyecto original a tu repositorio para que tu trabajo esté siempre al día.
-Cómo agregar un `upstream`:
-```
-git remote add upstream https://github.com/autor_del_repo/repo_original.git
-```
+    - Si has hecho un fork de un proyecto en GitHub, es importante que mantengas tu copia sincronizada con el repositorio original. `Upstream` te permite traer los últimos cambios del proyecto original a tu repositorio para que tu trabajo esté siempre al día.
+    - Cómo agregar un `upstream`:
+    ```
+    git remote add upstream https://github.com/autor_del_repo/repo_original.git
+    ```
 Ejemplo de uso de `upstream`:
+    - Descargar los cambios del repositorio original (sin aplicar):
+    ```
+    git fetch upstream
+    ```
+    Fusionar los cambios de `upstream` en tu rama `main`:
+    ```
+    git merge upstream/main
+    ```
 
-Descargar los cambios del repositorio original (sin aplicar):
-```
-git fetch upstream
-```
-Fusionar los cambios de `upstream` en tu rama `main`:
-```
-git merge upstream/main
-```
 ### Diferencia clave entre origin y upstream
 - `origin`: Es tu copia forkeada del repositorio, donde subirás tus cambios.
 - `upstream`: Es el repositorio original (del cual hiciste el fork) y que puedes usar para obtener los últimos cambios realizados por otros colaboradores.
@@ -65,19 +65,19 @@ git merge upstream/main
 Para asegurarte de que trabajas con la última versión del proyecto y evitar conflictos futuros:
 
 1. Añade el repositorio original como `upstream`:
-- Si no lo has hecho ya, añade el repositorio original como un remoto:
-```
-git remote add upstream <URL_del_repo_original>
-```
-- Verifica que lo has añadido correctamente:
-```
-git remote -v
-```
+    - Si no lo has hecho ya, añade el repositorio original como un remoto:
+    ```
+    git remote add upstream <URL_del_repo_original>
+    ```
+    - Verifica que lo has añadido correctamente:
+    ```
+    git remote -v
+    ```
 2. Trae los últimos cambios del repositorio original:
     - Antes de empezar a trabajar, asegúrate de traer cualquier cambio reciente:
-```
-git fetch upstream
-```
+    ```
+    git fetch upstream
+    ```
 3. Fusiona o rebase los cambios del repositorio original en tu fork:
     - Para mantener tu rama `main` actualizada con los cambios del original:
     ```
@@ -150,11 +150,11 @@ Antes de trabajar en algo, es importante verificar si alguien más ya está trab
 
 ### Mantén una buena comunicación con la comunidad
 
-Discute tus ideas antes de empezar:
-Si estás trabajando en un proyecto colaborativo, es una buena práctica abrir un issue o comentar en un Pull Request antes de empezar a trabajar en una nueva funcionalidad o corrección.
-Esto evitará duplicidad de trabajo y te permitirá obtener retroalimentación temprana.
-Avisa si estás trabajando en algo:
-Cuando empiezas a trabajar en una funcionalidad o corrección, comunícalo en el proyecto para que la comunidad sepa en qué estás trabajando.
+1. Discute tus ideas antes de empezar:
+    - Si estás trabajando en un proyecto colaborativo, es una buena práctica abrir un issue o comentar en un Pull Request antes de empezar a trabajar en una nueva funcionalidad o corrección.
+    - Esto evitará duplicidad de trabajo y te permitirá obtener retroalimentación temprana.
+2. Avisa si estás trabajando en algo:
+    - Cuando empiezas a trabajar en una funcionalidad o corrección, comunícalo en el proyecto para que la comunidad sepa en qué estás trabajando.
 
 
 ## Flujos de trabajo
