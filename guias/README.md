@@ -14,7 +14,7 @@ Un remote es un repositorio que se encuentra alojado en un servidor remoto (como
 ```
 git remote -v
 ```
-- **Ejemplo**: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, ~https://github.com/usuario/repo.git~), y el nombre será origin. 
+- **Ejemplo**: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, `https://github.com/usuario/repo.git`), y el nombre será `origin`. 
 
 ### Upstream
 
