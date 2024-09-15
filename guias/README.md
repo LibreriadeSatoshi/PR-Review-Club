@@ -65,9 +65,8 @@ git fetch upstream
 ```
 git merge upstream/main
 ```
-``
-    - Si prefieres un historial más limpio:
-    
+
+Nota: Si prefieres un historial más limpio:
 ```
 git rebase upstream/main
 ```
