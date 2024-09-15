@@ -1,5 +1,4 @@
-# Guía para trabajar con Git 
-en proyectos de Bitcoin Open Source
+# Guía para trabajar con Git en proyectos de Bitcoin Open Source
 
 Trabajar en proyectos open source en Bitcoin, especialmente cuando se hace fork de un repositorio y se contribuye con cambios, requiere un flujo organizado para evitar conflictos y mantener un trabajo limpio. Aquí te dejo una guía de buenas prácticas y algunas aclaraciones, para asegurar que tu trabajo no entre en conflicto con otros colaboradores y que mantengas tu fork y ramas bien gestionadas.
 
@@ -7,14 +6,15 @@ Estas recomendaciones son una guía general para trabajar en proyectos open sour
 
 ## Conceptos
 En Git y GitHub, los conceptos de upstream y remote son fundamentales para gestionar repositorios de manera eficiente, especialmente cuando estás colaborando o trabajando con un repositorio "forkeado", bajo estas líneas trato de explicar cada concepto.
-Remote (Remoto)
+
+### Remote (Remoto)
 Un remote es un repositorio que se encuentra alojado en un servidor remoto (como GitHub, GitLab, etc.), fuera de tu máquina local. Cuando clonas o creas un repositorio, automáticamente se crea un remote llamado origin que apunta a ese repositorio remoto original.
-Origen del término: El nombre origin es simplemente el nombre por defecto que Git asigna al primer repositorio remoto con el que estás trabajando. Sin embargo, puedes tener varios remotes y nombrarlos de forma personalizada.
-Para mostrar una lista de todos los repositorios remotos asociados con tu proyecto puedes hacer esto:
+- *Origen del término*: El nombre origin es simplemente el nombre por defecto que Git asigna al primer repositorio remoto con el que estás trabajando. Sin embargo, puedes tener varios remotes y nombrarlos de forma personalizada.
+- Para mostrar una *lista de todos los repositorios remotos* asociados con tu proyecto puedes hacer esto:
 ```
 git remote -v
 ```
-Ejemplo: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, https://github.com/usuario/repo.git), y el nombre será origin. 
+- *Ejemplo*: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, https://github.com/usuario/repo.git~), y el nombre será origin. 
 
 ### Upstream
 
