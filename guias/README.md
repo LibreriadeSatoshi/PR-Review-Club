@@ -70,17 +70,19 @@ Nota: Si prefieres un historial más limpio:
 ```
 git rebase upstream/main
 ```
-Trabaja en ramas específicas para cada funcionalidad o corrección
+### Trabaja en ramas específicas para cada funcionalidad o corrección
 
 Nunca trabajes directamente en la rama main de tu fork. En su lugar:
-
 1. Crea una nueva rama para cada funcionalidad o corrección:
-Cambia a main y crea una nueva rama:
+    - Cambia a main y crea una nueva rama:
+    
+    ```bash
+    git checkout main
+    git checkout -b <nombre_de_la_nueva_rama>
+    ```
 
-git checkout main
-git checkout -b <nombre_de_la_nueva_rama>
+    - Esto asegura que los cambios en main se mantengan separados y limpios.
 
-Esto asegura que los cambios en main se mantengan separados y limpios.
 
 Confirma y sube los cambios a tu fork:
 Haz commits locales para registrar tu progreso:
