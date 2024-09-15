@@ -2,7 +2,7 @@
 
 ## Índice
 
-1. [Guía para trabajar con Git en proyectos de Bitcoin Open Source](#guía-para-trabajar-con-git-en-proyectos-de-bitcoin-open-source)
+1. [Introducción](#introducción)
 2. [Conceptos](#conceptos)
     - [Remote (Remoto)](#remote-remoto)
     - [Upstream](#upstream)
