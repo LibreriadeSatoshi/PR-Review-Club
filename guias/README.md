@@ -99,33 +99,35 @@ Nunca trabajes directamente en la rama main de tu fork. En su lugar:
 
 ### Mantén tus ramas locales organizadas
 
-Borra ramas antiguas que ya no uses:
-Si una rama ya ha sido fusionada o no es necesaria, elimínala:
-
-git branch -d <nombre_de_la_rama>
-
-Si no ha sido fusionada pero ya no la necesitas, puedes forzar su eliminación:
-
-git branch -D <nombre_de_la_rama>
-
-Sincroniza las ramas remotas eliminadas:
-Si una rama ha sido eliminada en el repositorio remoto, puedes limpiar las referencias a esas ramas en tu repositorio local:
-
-git fetch --prune
+1. Borra ramas antiguas que ya no uses:
+    - Si una rama ya ha sido fusionada o no es necesaria, elimínala:
+    ```
+    git branch -d <nombre_de_la_rama>
+    ```
+    - Si no ha sido fusionada pero ya no la necesitas, puedes forzar su eliminación:
+    ```
+    git branch -D <nombre_de_la_rama>
+    ```
+2. Sincroniza las ramas remotas eliminadas:
+    - Si una rama ha sido eliminada en el repositorio remoto, puedes limpiar las referencias a esas ramas en tu repositorio local:
+    ```
+    git fetch --prune
+    ```
 
 ### Comparar tu fork con el original y evitar duplicidad de trabajo
 
 Antes de trabajar en algo, es importante verificar si alguien más ya está trabajando en una funcionalidad similar. Puedes hacerlo de esta manera:
 
-Verifica los cambios en el repositorio original:
-Comprueba si hay cambios en el repositorio original que afecten tu trabajo:
+1. Verifica los cambios en el repositorio original:
+    - Comprueba si hay cambios en el repositorio original que afecten tu trabajo:
+    ```
+    git fetch upstream
+    git diff upstream/main main
+    ```
 
-     git fetch upstream
-     git diff upstream/main main
-
-Usa GitHub para comparar:
-En GitHub, puedes crear un "Pull Request" entre el repositorio original y tu fork para ver si hay cambios en el código que afecten tu trabajo.
-También revisa las Pull Requests abiertas para ver si alguien más está trabajando en lo mismo que tú.
+2. Usa GitHub para comparar:
+    - En GitHub, puedes crear un "Pull Request" entre el repositorio original y tu fork para ver si hay cambios en el código que afecten tu trabajo.
+    - También revisa las Pull Requests abiertas para ver si alguien más está trabajando en lo mismo que tú.
 
 
 ### Mantén una buena comunicación con la comunidad
