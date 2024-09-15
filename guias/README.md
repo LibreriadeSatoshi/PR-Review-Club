@@ -56,16 +56,16 @@ git remote add upstream <URL_del_repo_original>
 git remote -v
 ```
 2. Trae los últimos cambios del repositorio original:
-- Antes de empezar a trabajar, asegúrate de traer cualquier cambio reciente:
+    - Antes de empezar a trabajar, asegúrate de traer cualquier cambio reciente:
 ```
 git fetch upstream
 ```
 3. Fusiona o rebase los cambios del repositorio original en tu fork:
-- Para mantener tu rama `main` actualizada con los cambios del original:
+    - Para mantener tu rama `main` actualizada con los cambios del original:
 ```
 git merge upstream/main
 ```
-- O, si prefieres un historial más limpio:
+    - O, si prefieres un historial más limpio:
 ```
 git rebase upstream/main
 ```
