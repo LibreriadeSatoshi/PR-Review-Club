@@ -38,13 +38,13 @@ git remote -v
 
 Upstream es un tipo de `remote` que hace referencia al repositorio original del cual hiciste un fork. Cuando trabajas con un fork en GitHub, tu repositorio local estará vinculado al `origin` (tu repositorio forkeado en tu cuenta), pero puedes agregar el repositorio original como un `remote` adicional llamado upstream.
 
-Por qué usar **upstream**:
-    - Si has hecho un fork de un proyecto en GitHub, es importante que mantengas tu copia sincronizada con el repositorio original. `Upstream` te permite traer los últimos cambios del proyecto original a tu repositorio para que tu trabajo esté siempre al día.
-    - Cómo agregar un `upstream`:
-    ```
-    git remote add upstream https://github.com/autor_del_repo/repo_original.git
-    ```
-Ejemplo de uso de `upstream`:
+#### Por qué usar **upstream**
+- Si has hecho un fork de un proyecto en GitHub, es importante que mantengas tu copia sincronizada con el repositorio original. `Upstream` te permite traer los últimos cambios del proyecto original a tu repositorio para que tu trabajo esté siempre al día.
+- Cómo agregar un `upstream`:
+```
+git remote add upstream https://github.com/autor_del_repo/repo_original.git
+```
+- Ejemplo de uso de `upstream`:
     - Descargar los cambios del repositorio original (sin aplicar):
     ```
     git fetch upstream
