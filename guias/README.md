@@ -83,20 +83,21 @@ Nunca trabajes directamente en la rama main de tu fork. En su lugar:
 
     - Esto asegura que los cambios en main se mantengan separados y limpios.
 
+2. Confirma y sube los cambios a tu fork:
+    - Haz commits locales para registrar tu progreso:
+      
+    ```bash
+    git add .
+    git commit -m "Descripción de los cambios"
+    ```
+    
+    - Sube tu rama al remoto:
+      
+    ```
+    git push origin <nombre_de_la_nueva_rama>
+    ```
 
-Confirma y sube los cambios a tu fork:
-Haz commits locales para registrar tu progreso:
-
-git add .
-git commit -m "Descripción de los cambios"
-
-Sube tu rama al remoto:
-
-
-git push origin <nombre_de_la_nueva_rama>
-
-
-Mantén tus ramas locales organizadas
+### Mantén tus ramas locales organizadas
 
 Borra ramas antiguas que ya no uses:
 Si una rama ya ha sido fusionada o no es necesaria, elimínala:
@@ -112,7 +113,7 @@ Si una rama ha sido eliminada en el repositorio remoto, puedes limpiar las refer
 
 git fetch --prune
 
-Comparar tu fork con el original y evitar duplicidad de trabajo
+### Comparar tu fork con el original y evitar duplicidad de trabajo
 
 Antes de trabajar en algo, es importante verificar si alguien más ya está trabajando en una funcionalidad similar. Puedes hacerlo de esta manera:
 
@@ -127,7 +128,7 @@ En GitHub, puedes crear un "Pull Request" entre el repositorio original y tu for
 También revisa las Pull Requests abiertas para ver si alguien más está trabajando en lo mismo que tú.
 
 
-Mantén una buena comunicación con la comunidad
+### Mantén una buena comunicación con la comunidad
 
 Discute tus ideas antes de empezar:
 Si estás trabajando en un proyecto colaborativo, es una buena práctica abrir un issue o comentar en un Pull Request antes de empezar a trabajar en una nueva funcionalidad o corrección.
@@ -136,25 +137,35 @@ Avisa si estás trabajando en algo:
 Cuando empiezas a trabajar en una funcionalidad o corrección, comunícalo en el proyecto para que la comunidad sepa en qué estás trabajando.
 
 
-Flujos de trabajo
-¿Cómo se empieza a trabajar en un proyecto (típicamente)?
+## Flujos de trabajo
+### ¿Cómo se empieza a trabajar en un proyecto (típicamente)?
 
-Fork del repositorio original en GitHub.
-Clonas tu fork en tu máquina local (el remote origin apunta a tu fork).
-Agregamos el remote upstream para poder sincronizarse con el repositorio original.
-Antes de hacer cambios en tu fork, traes los últimos cambios desde `upstream` para asegurarte de que estás trabajando con la versión más actualizada.
-Haces los cambios en tu fork y luego haces un pull request para contribuir al repositorio original.
+1. Fork del repositorio original en GitHub.
+2. Clonas tu fork en tu máquina local (el remote origin apunta a tu fork).
+3. Agregamos el remote upstream para poder sincronizarse con el repositorio original.
+3. Antes de hacer cambios en tu fork, traes los últimos cambios desde `upstream` para asegurarte de que estás trabajando con la versión más actualizada.
+5. Haces los cambios en tu fork y luego haces un pull request para contribuir al repositorio original.
 
-¿Cómo compruebo si estoy al día de los cambios en mi proyecto?
-Sincroniza tu fork con el repositorio original
+### ¿Cómo compruebo si estoy al día de los cambios en mi proyecto?
+1. Sincroniza tu fork con el repositorio original
+```
 git fetch upstream → git merge upstream/main).
-Crea una rama nueva para cada funcionalidad o corrección
+```
+2. Crea una rama nueva para cada funcionalidad o corrección
+```
 git checkout -b <rama_nueva>
-Confirma tus cambios localmente
+```
+3. Confirma tus cambios localmente
+```
 git commit -m "Descripción"
-Sube tu rama al remoto
+```
+4. Sube tu rama al remoto
+```
 git push origin <rama_nueva>
-Abre un Pull Request si quieres contribuir con tus cambios al proyecto original.
-Borra ramas locales que ya no necesites
+```
+5. Abre un Pull Request si quieres contribuir con tus cambios al proyecto original.
+6. Borra ramas locales que ya no necesites
+```
 git branch -d <nombre_de_la_rama>
-Comunica tus cambios o ideas en la comunidad del proyecto (issues, pull requests).
+```
+7. Comunica tus cambios o ideas en la comunidad del proyecto (issues, pull requests).
