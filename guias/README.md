@@ -17,6 +17,7 @@
     - [¿Cómo se empieza a trabajar en un proyecto (típicamente)?](#cómo-se-empieza-a-trabajar-en-un-proyecto-típicamente)
     - [¿Cómo compruebo si estoy al día de los cambios en mi proyecto?](#cómo-compruebo-si-estoy-al-día-de-los-cambios-en-mi-proyecto)
 
+## Introducción
 Trabajar en proyectos open source en Bitcoin, especialmente cuando se hace fork de un repositorio y se contribuye con cambios, requiere un flujo organizado para evitar conflictos y mantener un trabajo limpio. Aquí te dejo una guía de buenas prácticas y algunas aclaraciones, para asegurar que tu trabajo no entre en conflicto con otros colaboradores y que mantengas tu fork y ramas bien gestionadas.
 
 Estas recomendaciones son una guía general para trabajar en proyectos open source, pero cada proyecto puede tener sus propias reglas, flujos de trabajo y convenciones. Siempre es recomendable revisar las directrices específicas del proyecto, como las contribuciones (contributing guidelines), los issues abiertos, PR, y las políticas de revisión de código. Antes de empezar cualquier trabajo importante, es una buena práctica comunicarte con los mantenedores del proyecto o con otros colaboradores, y confirmar que tu enfoque está alineado con los objetivos del proyecto.
