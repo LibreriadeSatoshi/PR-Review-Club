@@ -4,40 +4,40 @@ Trabajar en proyectos open source en Bitcoin, especialmente cuando se hace fork 
 
 Estas recomendaciones son una guía general para trabajar en proyectos open source, pero cada proyecto puede tener sus propias reglas, flujos de trabajo y convenciones. Siempre es recomendable revisar las directrices específicas del proyecto, como las contribuciones (contributing guidelines), los issues abiertos, PR, y las políticas de revisión de código. Antes de empezar cualquier trabajo importante, es una buena práctica comunicarte con los mantenedores del proyecto o con otros colaboradores, y confirmar que tu enfoque está alineado con los objetivos del proyecto.
 
-Conceptos
+## Conceptos
 En Git y GitHub, los conceptos de upstream y remote son fundamentales para gestionar repositorios de manera eficiente, especialmente cuando estás colaborando o trabajando con un repositorio "forkeado", bajo estas líneas trato de explicar cada concepto.
 Remote (Remoto)
 Un remote es un repositorio que se encuentra alojado en un servidor remoto (como GitHub, GitLab, etc.), fuera de tu máquina local. Cuando clonas o creas un repositorio, automáticamente se crea un remote llamado origin que apunta a ese repositorio remoto original.
 Origen del término: El nombre origin es simplemente el nombre por defecto que Git asigna al primer repositorio remoto con el que estás trabajando. Sin embargo, puedes tener varios remotes y nombrarlos de forma personalizada.
 Para mostrar una lista de todos los repositorios remotos asociados con tu proyecto puedes hacer esto:
-
+```
 git remote -v
-
+```
 Ejemplo: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, https://github.com/usuario/repo.git), y el nombre será origin. 
 
-Upstream
+### Upstream
 
 Upstream es un tipo de remote que hace referencia al repositorio original del cual hiciste un fork. Cuando trabajas con un fork en GitHub, tu repositorio local estará vinculado al origin (tu repositorio forkeado en tu cuenta), pero puedes agregar el repositorio original como un remote adicional llamado upstream.
 
 Por qué usar upstream:
 Si has hecho un fork de un proyecto en GitHub, es importante que mantengas tu copia sincronizada con el repositorio original. Upstream te permite traer los últimos cambios del proyecto original a tu repositorio para que tu trabajo esté siempre al día.
 Cómo agregar un upstream:
-
+```
 git remote add upstream https://github.com/autor_del_repo/repo_original.git
-
+```
 Ejemplo de uso de `upstream`:
 
 Descargar los cambios del repositorio original (sin aplicar):
-
+```
 git fetch upstream
-
+```
 Fusionar los cambios de `upstream` en tu rama `main`:
-
+```
 git merge upstream/main
-
+```
 Diferencia clave entre origin y upstream
-origin: Es tu copia forkeada del repositorio, donde subirás tus cambios.
-upstream: Es el repositorio original (del cual hiciste el fork) y que puedes usar para obtener los últimos cambios realizados por otros colaboradores.
+- origin: Es tu copia forkeada del repositorio, donde subirás tus cambios.
+- upstream: Es el repositorio original (del cual hiciste el fork) y que puedes usar para obtener los últimos cambios realizados por otros colaboradores.
 
 
 
