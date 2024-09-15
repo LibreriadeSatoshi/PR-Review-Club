@@ -9,12 +9,12 @@ En Git y GitHub, los conceptos de upstream y remote son fundamentales para gesti
 
 ### Remote (Remoto)
 Un remote es un repositorio que se encuentra alojado en un servidor remoto (como GitHub, GitLab, etc.), fuera de tu máquina local. Cuando clonas o creas un repositorio, automáticamente se crea un remote llamado origin que apunta a ese repositorio remoto original.
-- *Origen del término*: El nombre origin es simplemente el nombre por defecto que Git asigna al primer repositorio remoto con el que estás trabajando. Sin embargo, puedes tener varios remotes y nombrarlos de forma personalizada.
-- Para mostrar una *lista de todos los repositorios remotos* asociados con tu proyecto puedes hacer esto:
+- **Origen del término**: El nombre origin es simplemente el nombre por defecto que Git asigna al primer repositorio remoto con el que estás trabajando. Sin embargo, puedes tener varios remotes y nombrarlos de forma personalizada.
+- Para mostrar una **lista de todos los repositorios remotos** asociados con tu proyecto puedes hacer esto:
 ```
 git remote -v
 ```
-- *Ejemplo*: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, https://github.com/usuario/repo.git~), y el nombre será origin. 
+- **Ejemplo**: Si clonas un repositorio de GitHub, el remote será el URL de dicho repositorio (por ejemplo, ~https://github.com/usuario/repo.git~), y el nombre será origin. 
 
 ### Upstream
 
