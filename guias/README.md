@@ -1,4 +1,5 @@
-# Guía para trabajar con Git en proyectos de Bitcoin Open Source
+# Guía para trabajar con Git 
+# en proyectos de Bitcoin Open Source
 
 Trabajar en proyectos open source en Bitcoin, especialmente cuando se hace fork de un repositorio y se contribuye con cambios, requiere un flujo organizado para evitar conflictos y mantener un trabajo limpio. Aquí te dejo una guía de buenas prácticas y algunas aclaraciones, para asegurar que tu trabajo no entre en conflicto con otros colaboradores y que mantengas tu fork y ramas bien gestionadas.
 
