@@ -49,7 +49,7 @@ git remote add upstream https://github.com/autor_del_repo/repo_original.git
     ```
     git fetch upstream
     ```
-    Fusionar los cambios de `upstream` en tu rama `main`:
+    - Fusionar los cambios de `upstream` en tu rama `main`:
     ```
     git merge upstream/main
     ```
