@@ -62,14 +62,14 @@ git fetch upstream
 ```
 3. Fusiona o rebase los cambios del repositorio original en tu fork:
     - Para mantener tu rama `main` actualizada con los cambios del original:
-```
-git merge upstream/main
-```
+    ```
+    git merge upstream/main
+    ```
+    - O, si prefieres un historial más limpio:
+    ```
+    git rebase upstream/main
+    ```
 
-Nota: Si prefieres un historial más limpio:
-```
-git rebase upstream/main
-```
 ### Trabaja en ramas específicas para cada funcionalidad o corrección
 
 Nunca trabajes directamente en la rama main de tu fork. En su lugar:
